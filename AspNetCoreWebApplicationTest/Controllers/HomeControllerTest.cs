@@ -12,7 +12,7 @@ namespace AspNetCoreWebApplicationTest.Controllers
             HomeController controller = new HomeController();
             ViewResult result = (ViewResult) controller.Index();
             Assert.Equal(1, result.ViewData.Count);
-            Assert.Equal("You just created a ASP.Net Core web application!", result.ViewData["Message"]);
+            Assert.Equal("You just created a ASP.Net Core web application, you goof!", result.ViewData["Message"]);
         }
 
         [Fact]
